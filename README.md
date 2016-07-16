@@ -74,6 +74,7 @@ Word characters repeated 3+ times
 should match:
 teeest
 test___test
+test000test
 
 should not match:
 teest
