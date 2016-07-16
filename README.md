@@ -35,8 +35,8 @@ Format
 
 Modifiers (flags)
 * `i` Case insensitive
-* `g` global (don't return on first match)
-* `m` multi-line (treat each line as a separate string)
+* `g` Global (don't return on first match)
+* `m` Multi-line (treat each line as a separate string)
 
 # Examples
 
@@ -67,7 +67,7 @@ This is a test.
 
 ```
 
-Characters repeated 3+ times
+Word characters repeated 3+ times
 `/(\w)\1{2}/ig`
 
 ```
@@ -98,11 +98,13 @@ Two spaces between sentences
 ```
 should match:
 This should match.  It has two spaces.
+This should match?  It has two spaces.
+This should match!  It has two spaces.
 This should match.   It has three spaces.
 
 should not match:
 This should not match. It only has one space.
-This     should not match.
+This     Should not match.
 ```
 
 # Other uses
