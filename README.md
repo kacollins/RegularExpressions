@@ -73,6 +73,7 @@ Word characters repeated 3+ times
 ```
 should match:
 teeest
+test___test
 
 should not match:
 teest
