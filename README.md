@@ -93,7 +93,7 @@ This is isn’t a test.
 ```
 
 Two spaces between sentences
-`/. {2,}(?=[A-Z])/g`
+`/[.?!] {2,}(?=[A-Z])/g`
 
 ```
 should match:
